@@ -7,3 +7,6 @@ class student(models.Model):
     stu_email = models.EmailField()
     stu_contact = models.IntegerField()
     stu_password = models.CharField(max_length=25)
+
+    def __str__(self):
+        return self.stu_name
